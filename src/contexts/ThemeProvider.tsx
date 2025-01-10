@@ -19,7 +19,7 @@ const useTheme = () => {
 }
 
 const ThemeProvider: FC<PropsWithChildren> = ({ children }) => {
-    const [theme, _setTheme] = useState(localStorage.getItem("theme") || "")
+    const [theme, _setTheme] = useState("dracula")
 
     const setTheme = useCallback((_theme: string) => {
         _setTheme(_theme)

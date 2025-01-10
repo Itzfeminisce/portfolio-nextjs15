@@ -7,9 +7,6 @@ import styles from '../styles/RepoCard.module.css';
 
 const RepoCard = ({ repo }) => {
 
-  console.log({repo});
-  
-  
   return (
     <div className={styles.card}>
       <div>

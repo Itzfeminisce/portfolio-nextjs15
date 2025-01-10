@@ -1,5 +1,5 @@
-import ThemeInfo from '@/components/ThemeInfo';
-import styles from '@/styles/SettingsPage.module.css';
+import ThemeInfo from '../../components/ThemeInfo';
+import styles from '../../styles/SettingsPage.module.css';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {

@@ -1,10 +1,10 @@
 "use client"
 
 import Image from 'next/image';
-import styles from '@/styles/ThemeInfo.module.css';
-import {useTheme} from "@/contexts/ThemeProvider"
+import styles from '../styles/ThemeInfo.module.css';
+import {useTheme} from "../contexts/ThemeProvider"
 
-const ThemeInfo = ({ icon, name, publisher, theme }) => {
+const ThemeInfo = ({ icon, name, publisher, theme, description }) => {
 const {setTheme, isActiveTheme} = useTheme()
 
   return (

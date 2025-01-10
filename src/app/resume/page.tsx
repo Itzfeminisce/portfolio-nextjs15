@@ -1,4 +1,4 @@
-import styles from "@/styles/ResumePage.module.css";
+import styles from "../../styles/ResumePage.module.css";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

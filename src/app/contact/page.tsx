@@ -1,6 +1,6 @@
-import ContactForm from '@/components/ContactForm';
-import ContactCode from '@/components/ContactCode';
-import styles from '@/styles/ContactPage.module.css';
+import ContactForm from '../../components/ContactForm';
+import ContactCode from '../../components/ContactCode';
+import styles from '../../styles/ContactPage.module.css';
 import { Metadata } from 'next';
 
 

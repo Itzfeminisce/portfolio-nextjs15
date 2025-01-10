@@ -1,14 +1,8 @@
 import Image from 'next/image';
 import GitHubCalendar from 'react-github-calendar';
-import RepoCard from '@/components/RepoCard';
-import styles from '@/styles/GithubPage.module.css';
+import RepoCard from '../../components/RepoCard';
+import styles from '../../styles/GithubPage.module.css';
 import { Metadata } from 'next';
-
-
-const getGithubData = async () => {
-  const response = await fetch("http://localhost:3000/api/github").then(res => res.json());
-  return response
-};
 
 
 export const metadata: Metadata = {
@@ -17,8 +11,18 @@ export const metadata: Metadata = {
 }
 
 
+export const dynamic = 'force-dynamic'
+
+const getGithubData = async () => {
+  const response = await fetch(`${process.env.APP_URL}/api/github`).then(res => res.json());
+  return response
+};
+
+
+
 const GithubPage = async () => {
   const { repos, user } = await getGithubData()
+
   const theme = {
     level0: '#161B22',
     level1: '#0e4429',
