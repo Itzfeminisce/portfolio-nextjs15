@@ -6,18 +6,24 @@ const contactItems = [
   //   link: 'Itzfeminisce.dev',
   //   href: 'https://Itzfeminisce.dev',
   // },
+  
   {
-    social: 'email',
+    social: 'WhatsApp',
+    link: '+2347061017993',
+    href: 'https://wa.me/+2349116041985?text=Hello%20there!%20I%20have%20a%20question%20about%20your%20services.',
+  },
+  {
+    social: 'Email',
     link: 'rofesol.ng@gmail.com',
     href: 'mailto:rofesol.ng@gmail.com',
   },
   {
-    social: 'github',
+    social: 'GitHub',
     link: 'Itzfeminisce',
     href: 'https://github.com/Itzfeminisce',
   },
   {
-    social: 'linkedin',
+    social: 'LinkedIn',
     link: '@Itzfeminisce',
     href: 'https://www.linkedin.com/in/Itzfeminisce/',
   },
@@ -42,7 +48,7 @@ const contactItems = [
   //   href: 'https://t.me/Itzfeminisce',
   // },
   {
-    social: 'facebook',
+    social: 'Facebook',
     link: '@Itzfeminisce',
     href: 'https://facebook.com/Itzfeminisce',
   },
