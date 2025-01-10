@@ -28,8 +28,11 @@ const nextConfig = {
       },
     ],
   },
-  webpack: (config) => {
+  webpack: (config, { isServer }) => {
     config.resolve.alias["@"] = path.resolve(__dirname, "src");
+    if (!isServer) {
+      config.externals = { canvas: "canvas" };
+    }
     return config;
   },
 };
