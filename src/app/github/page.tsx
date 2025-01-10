@@ -7,7 +7,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Github Projects Page",
-  description: "View Github Projects Page.",
+  // description: "View Github Projects Page.",
 }
 
 

@@ -5,7 +5,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Projects Page",
-  description: "View projects.",
+  // description: "View projects.",
 }
 
 export const dynamic = 'force-dynamic'

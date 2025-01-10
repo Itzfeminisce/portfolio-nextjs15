@@ -3,7 +3,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Resume Page",
-  description: "Download/View Resume.",
+  // description: "Download/View Resume.",
 }
 
 const ContactPage = () => {

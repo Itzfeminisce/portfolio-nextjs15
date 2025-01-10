@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Settings',
-  description: 'Change Theme',
+  // description: 'Change Theme',
 }
 
 const SettingsPage = () => {
