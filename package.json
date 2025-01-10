@@ -10,6 +10,7 @@
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
     "@notionhq/client": "^0.2.2",
+    "axios": "^1.7.9",
     "next": "^15.1.4",
     "nodemailer": "^6.9.16",
     "react": "^19.0.0",
