@@ -1,5 +1,7 @@
-import styles from "../../styles/ResumePage.module.css";
 import { Metadata } from "next";
+import styles from "../../styles/ResumePage.module.css";
+
+import PdfViewer from "./PdfViewer"
 
 export const metadata: Metadata = {
   title: "Resume Page",
@@ -7,6 +9,7 @@ export const metadata: Metadata = {
 }
 
 const ContactPage = () => {
+  return <PdfViewer />
   return (
     <div className={styles.container}>
       <div className={styles["education-section"]}>

@@ -9,7 +9,7 @@ const contactItems = [
   
   {
     social: 'WhatsApp',
-    link: '+2347061017993',
+    link: '+2349116041985',
     href: 'https://wa.me/+2349116041985?text=Hello%20there!%20I%20have%20a%20question%20about%20your%20services.',
   },
   {

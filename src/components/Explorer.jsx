@@ -7,12 +7,12 @@ import styles from '../styles/Explorer.module.css';
 
 const explorerItems = [
   {
-    name: 'home.jsx',
+    name: 'home.tsx',
     path: '/',
     icon: 'react_icon.svg',
   },
   {
-    name: 'about.html',
+    name: 'about.tsx',
     path: '/about',
     icon: 'html_icon.svg',
   },
@@ -22,7 +22,7 @@ const explorerItems = [
     icon: 'css_icon.svg',
   },
   {
-    name: 'projects.js',
+    name: 'projects.tsx',
     path: '/projects',
     icon: 'js_icon.svg',
   },
@@ -32,7 +32,7 @@ const explorerItems = [
     icon: 'pdf_icon.svg',
   },
   {
-    name: 'github.md',
+    name: 'github.mdx',
     path: '/github',
     icon: 'markdown_icon.svg',
   },

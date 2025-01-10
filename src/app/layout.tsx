@@ -1,9 +1,14 @@
-import React from "react"
+import { Metadata, Viewport } from "next";
 import Layout from "../components/Layout"
+import ThemeProvider from "../contexts/ThemeProvider";
+
+// React PDF Viewer
+import '@react-pdf-viewer/core/lib/styles/index.css';
+import '@react-pdf-viewer/default-layout/lib/styles/index.css';
+
+
 import "../styles/globals.css";
 import "../styles/themes.css";
-import ThemeProvider from "../contexts/ThemeProvider";
-import { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
   title: "Rotimi Oluwafemi | Fullstack Engineer",
