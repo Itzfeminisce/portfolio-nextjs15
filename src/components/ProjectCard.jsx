@@ -5,7 +5,7 @@ const ProjectCard = ({ project }) => {
   return (
     <div className={styles.card}>
       <div className={styles.imgContainer}>
-      <Image src={project.image} height={300} width={600} alt={project.name} />
+      <Image src={project.image} height={300} width={600} alt={project.name} unoptimized={true}/>
       </div>
       <div className={styles.content}>
         <h3>{project.name}</h3>
