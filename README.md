@@ -17,7 +17,7 @@ This project is my personal portfolio, built using **Next.js 15**, showcasing my
 
 - **Frontend**: React, Next.js 15, Tailwind CSS
 - **Form Handling**: `react-hook-form` with `zod` for schema validation
-- **Deployment**: Hosted on a robust platform (e.g., AWS, Vercel, or similar)
+- **Deployment**: Hosted on Vercel
 
 ### Highlights
 
