@@ -10,7 +10,7 @@ const PdfViewer = () => {
     const getFilePluginInstance = getFilePlugin()
     return (
         <>
-            <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
+            <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
             {/* <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.120/build/pdf.worker.min.js"> */}
             <getFilePluginInstance.Download>
                 {

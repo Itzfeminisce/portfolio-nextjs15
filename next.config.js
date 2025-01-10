@@ -28,13 +28,18 @@ const nextConfig = {
       },
     ],
   },
-  webpack: (config, { isServer }) => {
-    config.resolve.alias["@"] = path.resolve(__dirname, "src");
-    if (!isServer) {
-      config.externals = { canvas: "canvas" };
-    }
-    return config;
-  },
+  // webpack: (config, { isServer }) => {
+  //   config.resolve.alias["@"] = path.resolve(__dirname, "src");
+  //   if (!isServer) {
+  //     config.externals = { canvas: "canvas" };
+  //   }
+  //   return config;
+  // },
+  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+      config.resolve.alias.canvas = false
+      config.resolve.alias.encoding = false
+      return config
+  }
 };
 
 module.exports = nextConfig;
