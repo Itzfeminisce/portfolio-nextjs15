@@ -1,0 +1,101 @@
+[
+ 
+  {
+    "id": 1,
+    "name": "Dutify",
+    "image": "https://imgur.com/blfnJBX.png",
+    "description": "Personalized dark-themed to-do app with task input, categories, sorting, theme toggle, and task management.",
+    "tags": ["html", "css", "javascript"],
+    "source_code": "https://github.com/Itzfeminisce/dutify",
+    "demo": "https://dutify.vercel.app"
+  },
+  {
+    "id":2,
+    "name": "NotJustEvent",
+    "image": "https://imgur.com/od8GGPS.png",
+    "description": "a transformative online marketplace designed to digitally advance event and entertainment planning. ",
+    "tags": ["react", "mongodb", "gcp", "sendpulse", "firebase", "jwt"],
+    "demo": "https://notjustevent.com",
+    "role": "Backend Engineer"
+  },
+  {
+    "id": 3,
+    "name": "Quickshop",
+    "image": "https://imgur.com/oDQSMcM.png",
+    "description": "a platform for merchants seeking wider audiences and shoppers seeking a seamless and secure shopping experience.",
+    "tags": ["react", "laravel", "mysql", "firebase", "engage"],
+    "demo": "https://getquickshop.com",
+    "role": "Fullstack Engineer"
+  },
+  {
+    "id": 4,
+    "name": "MyPancho",
+    "image": "https://imgur.com/SaTR9qz.png",
+    "description": "A CMS platform designed for creating, managing, and sharing website templates.",
+    "tags": ["next", "react", "shadcn", "tailwindcss"],
+    "demo": "https://mypancho.com/online2",
+    "role": "Frontend Engineer"
+  },
+  {
+    "id": 5,
+    "name": "bondX",
+    "image": "https://imgur.com/fpqZYoQ.png",
+    "description": "A decentralized platform for creating, managing and trading tokenized bonds",
+    "tags": ["next", "onchainkit", "radixui", "zkfetch", "reclaimprotocol", "ethers", "aerodrome", "onchainverify", "solidity"],
+    "source_code": "https://github.com/DruxAMB/bondx-frontend",
+    "demo": "https://bondx-frontend-gamma.vercel.app"
+  },
+  {
+    "id": 6,
+    "name": "Gotocourse Africa",
+    "image": "https://imgur.com/pQnzoq1.png",
+    "description": "Worked on 2 gotocourse website builder template",
+    "tags": ["html", "css", "javascript"],
+    "demo": "https://gotocourse.com/"
+  },
+  {
+    "id": 7,
+    "name": "myComputerENGR",
+    "image": "https://imgur.com/pjBr5bI.png",
+    "description": "Gadget ( computer, smartphones & apple devices ) Repair Company",
+    "tags": ["next", "framer motion", "tailwind"],
+    "source_code": "https://github.com/DruxAMB/my-computer-engr",
+    "demo": "https://myComputerENGR.com.ng/"
+  },
+  {
+    "id": 8,
+    "name": "Trope Cast",
+    "image": "https://imgur.com/tDt80YI.png",
+    "description": "Football Onchain ( farcaster based application )",
+    "tags": ["next", "shadcnui", "pinata fdk", "farcaster auth-kit", "radixui"],
+    "source_code": "https://github.com/FootballOnChain",
+    "demo": "https://trope-cast.vercel.app/"
+  },
+  {
+    "id": 9,
+    "name": "Responsive Cars Website",
+    "image": "https://imgur.com/gyuh6Dm.png",
+    "description": "A responsive landing page for cars",
+    "tags": ["html", "css", "javascript"],
+    "source_code": "https://github.com/DruxAMB/carSite",
+    "demo": "https://car-site-peach.vercel.app/"
+  },
+  {
+    "id": 10,
+    "name": "IP Address Tracker",
+    "image": "https://imgur.com/nC5m3Br.png",
+    "description": "It helps in tracking the current location of an IP ADDRESS",
+    "tags": ["react", "vite", "leaflet", "axios"],
+    "source_code": "https://github.com/DruxAMB/DruxAMB---IP-Address-Tracker",
+    "demo": "https://drux-amb-ip-address-tracker.vercel.app/"
+  },
+  {
+    "id": 11,
+    "name": "Responsive Watches Siter",
+    "image": "https://imgur.com/oBU4Ehw.png",
+    "description": "A responsive Landing page for rolex wrist watches",
+    "tags": ["html", "css", "javascript"],
+    "source_code": "https://github.com/DruxAMB/Rolex-Wrist-Watch",
+    "demo": "https://druxamb.github.io/Rolex-Wrist-Watch/"
+  }
+]

@@ -1,0 +1,29 @@
+# Ignore node_modules except for production dependencies
+node_modules/
+!node_modules/.prisma/
+
+# Ignore build artifacts
+.next/
+out/
+dist/
+
+# Ignore configuration files not needed in production
+.vscode/
+.eslintignore
+.eslintrc.*
+.prettierrc.*
+*.config.js
+*.config.cjs
+*.config.mjs
+.env.local
+.env.development
+
+# Ignore test files and coverage
+*.test.*
+*.spec.*
+__tests__/
+coverage/
+
+# Ignore local files and logs
+.DS_Store
+*.log
