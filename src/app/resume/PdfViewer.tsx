@@ -1,6 +1,6 @@
 "use client"
 import { Document, Page } from 'react-pdf';
-import { Skeleton } from "@/styles/components/ui/skeleton"
+import { Skeleton } from "../../styles/components/ui/skeleton"
 
 
 import { pdfjs } from 'react-pdf';
