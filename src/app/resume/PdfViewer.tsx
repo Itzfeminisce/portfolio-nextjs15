@@ -1,35 +1,39 @@
 "use client"
-import { Document, Page } from 'react-pdf';
-import { Skeleton } from "../../styles/components/ui/skeleton"
+import { Button } from '@/styles/components/ui/button';
+import { Viewer, Worker } from '@react-pdf-viewer/core';
+import { getFilePlugin, RenderDownloadProps, } from '@react-pdf-viewer/get-file';
+import { DownloadIcon } from 'lucide-react';
 
 
-import { pdfjs } from 'react-pdf';
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-    'pdfjs-dist/build/pdf.worker.min.mjs',
-    import.meta.url,
-).toString();
-
-
-export default function PdfViewer() {
+const PdfViewer = () => {
+    const getFilePluginInstance = getFilePlugin()
     return (
-        <div className='container mx-auto w-1/2'>
-            <Document loading={<SkeletonCard />} file="Oluwafemi_s_Resume.pdf">
-                <Page pageNumber={1}/>
-            </Document>
-        </div>
+        <>
+            <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
+            <getFilePluginInstance.Download>
+                {
+                    (props: RenderDownloadProps) => (
+                        <div className="flex w-full justify-end items-center">
+                            <Button variant="ghost" size="icon" onClick={props.onClick}>
+                                <DownloadIcon /> 
+                            </Button>
+                        </div>
+                    )
+                }
+            </getFilePluginInstance.Download>
+                <div className='h-full rounded-md overflow-hidden'>
+                    <Viewer
+                        fileUrl="/Oluwafemi_s_Resume.pdf"
+                        plugins={[
+                            getFilePluginInstance
+                        ]}
+                    />
+                </div>
+            </Worker>
+        </>
+
     );
 }
 
- 
-export function SkeletonCard() {
-  return (
-    <div className="flex flex-col space-y-3">
-      <Skeleton className="h-[125px] w-[250px] rounded-xl" />
-      <div className="space-y-2">
-        <Skeleton className="h-4 w-[250px]" />
-        <Skeleton className="h-4 w-[200px]" />
-      </div>
-    </div>
-  )
-}
+export default PdfViewer
