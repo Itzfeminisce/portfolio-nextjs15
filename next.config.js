@@ -36,12 +36,8 @@ const nextConfig = {
   //   return config;
   // },
   webpack: (config, { isServer }) => {
-    if (isServer) {
-      config.externals.push({
-        canvas: 'commonjs canvas',
-      });
-    }
-    return config;
+    config.resolve.alias.canvas = false;
+    return config
   },
 };
 
