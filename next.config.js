@@ -1,9 +1,15 @@
 // @ts-check
 /** @type {import('next').NextConfig} */
 
-const path = require("node:path");
-
 const nextConfig = {
+  experimental: {
+    turbo: {
+      resolveAlias: {
+        canvas: "./empty-module.ts",
+      },
+    },
+  },
+
   images: {
     remotePatterns: [
       //   'res.cloudinary.com',
@@ -28,16 +34,10 @@ const nextConfig = {
       },
     ],
   },
-  // webpack: (config, { isServer }) => {
-  //   config.resolve.alias["@"] = path.resolve(__dirname, "src");
-  //   if (!isServer) {
-  //     config.externals = { canvas: "canvas" };
-  //   }
-  //   return config;
-  // },
+
   webpack: (config, { isServer }) => {
     config.resolve.alias.canvas = false;
-    return config
+    return config;
   },
 };
 
