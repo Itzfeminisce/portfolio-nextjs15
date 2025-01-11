@@ -35,13 +35,14 @@ const nextConfig = {
   //   }
   //   return config;
   // },
-  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+  webpack: (config, { isServer }) => {
     if (isServer) {
-      config.resolve.alias.canvas = false;
+      config.externals.push({
+        canvas: 'commonjs canvas',
+      });
     }
-
-    return config
-  }
+    return config;
+  },
 };
 
 module.exports = nextConfig;
