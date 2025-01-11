@@ -2,20 +2,8 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-  experimental: {
-    turbo: {
-      resolveAlias: {
-        canvas: "./empty-module.ts",
-      },
-    },
-  },
-
   images: {
     remotePatterns: [
-      //   'res.cloudinary.com',
-      //   'avatars.githubusercontent.com',
-      //   'imgur.com',
-      // ],
       {
         protocol: "https",
         hostname: "res.cloudinary.com",
@@ -33,11 +21,6 @@ const nextConfig = {
         hostname: "i.imgur.com",
       },
     ],
-  },
-
-  webpack: (config, { isServer }) => {
-    config.resolve.alias.canvas = false;
-    return config;
   },
 };
 

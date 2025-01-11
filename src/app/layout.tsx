@@ -2,9 +2,9 @@ import { Metadata, Viewport } from "next";
 import Layout from "../components/Layout"
 import ThemeProvider from "../contexts/ThemeProvider";
 
-// React PDF Viewer
-import '@react-pdf-viewer/core/lib/styles/index.css';
-import '@react-pdf-viewer/default-layout/lib/styles/index.css';
+// // React PDF Viewer
+// import '@react-pdf-viewer/core/lib/styles/index.css';
+// import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 
 
 import "../styles/globals.css";
